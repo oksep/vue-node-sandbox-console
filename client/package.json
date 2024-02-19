@@ -1,0 +1,37 @@
+{
+  "name": "vue-node-sandobx-console-client",
+  "description": "Node Vue sandbox client",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "npm run serve",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "core-js": "^3.22.4",
+    "element-ui": "^2.15.10",
+    "less": "^3.13.1",
+    "less-loader": "^5.0.0",
+    "log4js": "^6.5.2",
+    "moment": "^2.29.4",
+    "normalize.css": "^8.0.1",
+    "simple-code-editor": "^1.2.2",
+    "vue": "^2.6.0",
+    "vue-router": "^3.5.3",
+    "vue-svg-loader": "^0.16.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "4.5.0",
+    "@vue/cli-plugin-router": "4.5.0",
+    "@vue/cli-plugin-vuex": "4.5.0",
+    "@vue/cli-service": "4.5.0",
+    "prettier": "^2.2.1",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.14",
+    "vue-ts-loader": "^0.0.3",
+    "webpack": "^4.46.0"
+  }
+}

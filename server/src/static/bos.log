@@ -1,0 +1,759 @@
+[2024-02-18T16:45:45.567] [DEBUG] default - Listening on port: 8088
+[2024-02-18T16:45:57.019] [DEBUG] default -   [90m<--[39m [1mGET[22m [90m/[39m
+[2024-02-18T16:45:57.041] [DEBUG] default - GET / - 0ms
+[2024-02-18T16:45:57.042] [DEBUG] default - {}
+[2024-02-18T16:45:57.047] [DEBUG] default -   [90m-->[39m [1mGET[22m [90m/[39m [32m200[39m [90m29ms[39m [90m12b[39m
+[2024-02-18T16:45:57.669] [DEBUG] default -   [90m<--[39m [1mGET[22m [90m/favicon.ico[39m
+[2024-02-18T16:45:57.679] [DEBUG] default - GET /favicon.ico - 0ms
+[2024-02-18T16:45:57.680] [DEBUG] default - {}
+[2024-02-18T16:45:57.682] [DEBUG] default -   [90m-->[39m [1mGET[22m [90m/favicon.ico[39m [33m404[39m [90m13ms[39m [90m34b[39m
+[2024-02-18T16:45:59.472] [DEBUG] default -   [90m<--[39m [1mGET[22m [90m/[39m
+[2024-02-18T16:45:59.487] [DEBUG] default - GET / - 0ms
+[2024-02-18T16:45:59.487] [DEBUG] default - {}
+[2024-02-18T16:45:59.488] [DEBUG] default -   [90m-->[39m [1mGET[22m [90m/[39m [32m200[39m [90m16ms[39m [90m12b[39m
+[2024-02-18T17:29:05.383] [DEBUG] default - Listening on port: 8088
+[2024-02-18T17:34:14.052] [DEBUG] default -   [90m<--[39m [1mPOST[22m [90m/api/admin/sandbox/execute-code[39m
+[2024-02-18T17:34:14.075] [DEBUG] default - POST /api/admin/sandbox/execute-code - 0ms
+[2024-02-18T17:34:14.075] [DEBUG] default - {
+  codeData: '// Type your JavaScript code here \n' +
+    '// Dangerous edit, test your code locally!!! \n' +
+    '\n' +
+    '\n' +
+    'let a = 10 + 10;\n' +
+    '\n' +
+    'return a;'
+}
+[2024-02-18T17:34:14.082] [DEBUG] default -   [90m-->[39m [1mPOST[22m [90m/api/admin/sandbox/execute-code[39m [33m404[39m [90m30ms[39m [90m34b[39m
+[2024-02-18T17:34:21.690] [DEBUG] default -   [90m<--[39m [1mPOST[22m [90m/api/admin/sandbox/execute-code[39m
+[2024-02-18T17:34:21.701] [DEBUG] default - POST /api/admin/sandbox/execute-code - 0ms
+[2024-02-18T17:34:21.701] [DEBUG] default - {
+  codeData: '// Type your JavaScript code here \n' +
+    '// Dangerous edit, test your code locally!!! \n' +
+    '\n' +
+    '\n' +
+    'let a = 10 + 10;\n' +
+    '\n' +
+    'return a;'
+}
+[2024-02-18T17:34:21.704] [DEBUG] default -   [90m-->[39m [1mPOST[22m [90m/api/admin/sandbox/execute-code[39m [33m404[39m [90m15ms[39m [90m34b[39m
+[2024-02-18T17:35:39.649] [DEBUG] default -   [90m<--[39m [1mPOST[22m [90m/api/sandbox/execute-code[39m
+[2024-02-18T17:35:39.659] [DEBUG] default - sandbox exec start...
+ // Type your JavaScript code here 
+// Dangerous edit, test your code locally!!! 
+
+
+let a = 10 + 10;
+
+return a;
+[2024-02-18T17:35:39.664] [DEBUG] default - VM exec in process: 54240 /Users/sep/.nvm/versions/node/v14.7.0/bin/node
+[2024-02-18T17:36:09.065] [DEBUG] default -   [90m<--[39m [1mPOST[22m [90m/api/sandbox/execute-code[39m
+[2024-02-18T17:36:09.072] [DEBUG] default - sandbox exec start...
+ // Type your JavaScript code here 
+// Dangerous edit, test your code locally!!! 
+
+
+let a = 10 + 10;
+
+a
+[2024-02-18T17:36:09.080] [DEBUG] default - VM exec in process: 54240 /Users/sep/.nvm/versions/node/v14.7.0/bin/node
+[2024-02-18T17:37:02.889] [DEBUG] default -   [90m<--[39m [1mPOST[22m [90m/api/sandbox/execute-code[39m
+[2024-02-18T17:37:02.893] [DEBUG] default - sandbox exec start...
+ let a = 10 + 10;
+
+a
+[2024-02-18T17:37:02.904] [DEBUG] default - VM exec in process: 54240 /Users/sep/.nvm/versions/node/v14.7.0/bin/node
+[2024-02-18T18:35:46.283] [DEBUG] default - Listening on port: 8088
+[2024-02-18T18:36:19.095] [DEBUG] default -   [90m<--[39m [1mPOST[22m [90m/api/sandbox/execute-code[39m
+[2024-02-18T18:36:19.112] [DEBUG] default - sandbox exec start...
+ let a = 10 + 10;
+
+console.log(a)
+[2024-02-18T18:36:19.114] [DEBUG] default - Sandbox console globalConsole.log('VM exec in process:', process.pid, process.title)
+try {
+    console.result = ''
+    await connectDBAsync()
+    let a = 10 + 10;
+    console.log(a)
+    await disconnectDBAsync()
+    inject(console.result)
+} catch (e) {
+    inject(e)
+}
+[2024-02-18T18:36:19.136] [DEBUG] default - VM exec in process: 57212 /Users/sep/.nvm/versions/node/v14.7.0/bin/node
+[2024-02-18T18:36:19.136] [DEBUG] default - connectDBAsync 1
+[2024-02-18T18:36:19.137] [DEBUG] default - Sandbox console 20
+[2024-02-18T18:36:19.137] [DEBUG] default - disconnectDBAsync 1
+[2024-02-18T18:36:19.137] [DEBUG] default - sandbox exec end...
+ 2024/2/18 下午6:36:19 debug:
+20
+
+
+[2024-02-18T18:36:19.138] [DEBUG] default - POST /api/sandbox/execute-code - 0ms
+[2024-02-18T18:36:19.138] [DEBUG] default - { codeData: 'let a = 10 + 10;\n\nconsole.log(a)' }
+[2024-02-18T18:36:19.142] [DEBUG] default -   [90m-->[39m [1mPOST[22m [90m/api/sandbox/execute-code[39m [32m200[39m [90m46ms[39m [90m51b[39m
+[2024-02-19T16:43:00.228] [DEBUG] default - Listening on port: 8088
+[2024-02-19T16:48:40.392] [DEBUG] default -   [90m<--[39m [1mPOST[22m [90m/api/sandbox/execute-code[39m
+[2024-02-19T16:48:40.414] [DEBUG] default - sandbox exec start...
+ let a = 10 + 10;
+
+console.log(a)
+[2024-02-19T16:48:40.415] [DEBUG] default - Sandbox console globalConsole.log('VM exec in process:', process.pid, process.title)
+try {
+    console.result = ''
+    await connectDBAsync()
+    let a = 10 + 10;
+    console.log(a)
+    await disconnectDBAsync()
+    inject(console.result)
+} catch (e) {
+    inject(e)
+}
+[2024-02-19T16:48:40.439] [DEBUG] default - VM exec in process: 63031 /Users/sep/.nvm/versions/node/v14.7.0/bin/node
+[2024-02-19T16:48:40.439] [DEBUG] default - connectDBAsync 1
+[2024-02-19T16:48:40.440] [DEBUG] default - Sandbox console 20
+[2024-02-19T16:48:40.440] [DEBUG] default - disconnectDBAsync 1
+[2024-02-19T16:48:40.440] [DEBUG] default - sandbox exec end...
+ 2024/2/19 下午4:48:40 debug:
+20
+
+
+[2024-02-19T16:48:40.441] [DEBUG] default - POST /api/sandbox/execute-code - 0ms
+[2024-02-19T16:48:40.441] [DEBUG] default - { codeData: 'let a = 10 + 10;\n\nconsole.log(a)' }
+[2024-02-19T16:48:40.444] [DEBUG] default -   [90m-->[39m [1mPOST[22m [90m/api/sandbox/execute-code[39m [32m200[39m [90m53ms[39m [90m51b[39m
+[2024-02-19T17:05:42.934] [DEBUG] default -   [90m<--[39m [1mGET[22m [90m/api/admin/getUserInfo[39m
+[2024-02-19T17:05:42.969] [DEBUG] default - GET /api/admin/getUserInfo - 0ms
+[2024-02-19T17:05:42.969] [DEBUG] default - {}
+[2024-02-19T17:05:42.972] [DEBUG] default -   [90m-->[39m [1mGET[22m [90m/api/admin/getUserInfo[39m [33m404[39m [90m44ms[39m [90m34b[39m
+[2024-02-19T17:05:43.017] [DEBUG] default -   [90m<--[39m [1mGET[22m [90m/api/admin/checkLogin[39m
+[2024-02-19T17:05:43.037] [DEBUG] default - GET /api/admin/checkLogin - 0ms
+[2024-02-19T17:05:43.038] [DEBUG] default - {}
+[2024-02-19T17:05:43.039] [DEBUG] default -   [90m-->[39m [1mGET[22m [90m/api/admin/checkLogin[39m [33m404[39m [90m21ms[39m [90m34b[39m
+[2024-02-19T17:07:57.898] [DEBUG] default -   [90m<--[39m [1mGET[22m [90m/api/admin/getUserInfo[39m
+[2024-02-19T17:07:57.900] [DEBUG] default - GET /api/admin/getUserInfo - 0ms
+[2024-02-19T17:07:57.900] [DEBUG] default - {}
+[2024-02-19T17:07:57.901] [DEBUG] default -   [90m-->[39m [1mGET[22m [90m/api/admin/getUserInfo[39m [33m404[39m [90m3ms[39m [90m34b[39m
+[2024-02-19T17:07:57.971] [DEBUG] default -   [90m<--[39m [1mGET[22m [90m/api/admin/checkLogin[39m
+[2024-02-19T17:07:57.973] [DEBUG] default - GET /api/admin/checkLogin - 0ms
+[2024-02-19T17:07:57.973] [DEBUG] default - {}
+[2024-02-19T17:07:57.974] [DEBUG] default -   [90m-->[39m [1mGET[22m [90m/api/admin/checkLogin[39m [33m404[39m [90m3ms[39m [90m34b[39m
+[2024-02-19T17:08:01.620] [DEBUG] default -   [90m<--[39m [1mGET[22m [90m/api/admin/milestones/activate[39m
+[2024-02-19T17:08:01.628] [DEBUG] default -   [90m<--[39m [1mGET[22m [90m/api/admin/quality/statistics[39m
+[2024-02-19T17:08:01.629] [DEBUG] default -   [90m<--[39m [1mGET[22m [90m/api/admin/gitoperate/statistics[39m
+[2024-02-19T17:08:01.630] [DEBUG] default -   [90m<--[39m [1mGET[22m [90m/api/admin/resourceoccupy/project-sprint-info[39m
+[2024-02-19T17:08:01.631] [DEBUG] default - GET /api/admin/milestones/activate - 0ms
+[2024-02-19T17:08:01.631] [DEBUG] default - {}
+[2024-02-19T17:08:01.632] [DEBUG] default -   [90m-->[39m [1mGET[22m [90m/api/admin/milestones/activate[39m [33m404[39m [90m12ms[39m [90m34b[39m
+[2024-02-19T17:08:01.633] [DEBUG] default - GET /api/admin/quality/statistics - 0ms
+[2024-02-19T17:08:01.633] [DEBUG] default - {}
+[2024-02-19T17:08:01.634] [DEBUG] default -   [90m-->[39m [1mGET[22m [90m/api/admin/quality/statistics[39m [33m404[39m [90m6ms[39m [90m34b[39m
+[2024-02-19T17:08:01.634] [DEBUG] default - GET /api/admin/gitoperate/statistics - 0ms
+[2024-02-19T17:08:01.634] [DEBUG] default - {}
+[2024-02-19T17:08:01.634] [DEBUG] default -   [90m-->[39m [1mGET[22m [90m/api/admin/gitoperate/statistics[39m [33m404[39m [90m5ms[39m [90m34b[39m
+[2024-02-19T17:08:01.635] [DEBUG] default - GET /api/admin/resourceoccupy/project-sprint-info - 0ms
+[2024-02-19T17:08:01.636] [DEBUG] default - {}
+[2024-02-19T17:08:01.645] [DEBUG] default -   [90m-->[39m [1mGET[22m [90m/api/admin/resourceoccupy/project-sprint-info[39m [33m404[39m [90m15ms[39m [90m34b[39m
+[2024-02-19T17:08:01.670] [DEBUG] default -   [90m<--[39m [1mPOST[22m [90m/api/admin/tools/getStatisticalCrashState[39m
+[2024-02-19T17:08:01.670] [DEBUG] default - POST /api/admin/tools/getStatisticalCrashState - 0ms
+[2024-02-19T17:08:01.670] [DEBUG] default - {}
+[2024-02-19T17:08:01.672] [DEBUG] default -   [90m-->[39m [1mPOST[22m [90m/api/admin/tools/getStatisticalCrashState[39m [33m404[39m [90m2ms[39m [90m34b[39m
+[2024-02-19T17:08:01.676] [DEBUG] default -   [90m<--[39m [1mGET[22m [90m/api/admin/member/getUserInfoByEmail?email=undefined[39m
+[2024-02-19T17:08:01.677] [DEBUG] default - GET /api/admin/member/getUserInfoByEmail?email=undefined - 0ms
+[2024-02-19T17:08:01.677] [DEBUG] default - {}
+[2024-02-19T17:08:01.678] [DEBUG] default -   [90m-->[39m [1mGET[22m [90m/api/admin/member/getUserInfoByEmail?email=undefined[39m [33m404[39m [90m2ms[39m [90m34b[39m
+[2024-02-19T17:09:58.986] [DEBUG] default -   [90m<--[39m [1mPOST[22m [90m/api/sandbox/execute-code[39m
+[2024-02-19T17:09:58.993] [DEBUG] default - sandbox exec start...
+ // Type your JavaScript code here 
+// Dangerous edit, test your code locally!!! 
+const a = 10;
+const b = 20;
+const cal = require('uitlcal');
+
+const val = cal.sum(a, b);
+
+console.log('a + b =', val);
+[2024-02-19T17:09:58.994] [DEBUG] default - Sandbox console globalConsole.log('VM exec in process:', process.pid, process.title)
+try {
+    console.result = ''
+    await connectDBAsync()
+    const a = 10;
+    const b = 20;
+    const cal = require('uitlcal');
+    const val = cal.sum(a, b);
+    console.log('a + b =', val);
+    await disconnectDBAsync()
+    inject(console.result)
+} catch (e) {
+    inject(e)
+}
+[2024-02-19T17:09:58.997] [DEBUG] default - VM exec in process: 63031 /Users/sep/.nvm/versions/node/v14.7.0/bin/node
+[2024-02-19T17:09:58.997] [DEBUG] default - connectDBAsync 1
+[2024-02-19T17:09:59.002] [DEBUG] default - sandbox exec end...
+ Error: Cannot find module 'uitlcal'
+Require stack:
+- /Users/sep/Documents/web/vue-node-sandbox-console/server/src/routes/sandbox.ts
+- /Users/sep/Documents/web/vue-node-sandbox-console/server/src/routes/index.ts
+- /Users/sep/Documents/web/vue-node-sandbox-console/server/src/index.ts
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:1085:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:928:27)
+    at Module.require (internal/modules/cjs/loader.js:1145:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at evalmachine.<anonymous>:7:17
+    at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/sep/Documents/web/vue-node-sandbox-console/server/src/routes/sandbox.ts',
+    '/Users/sep/Documents/web/vue-node-sandbox-console/server/src/routes/index.ts',
+    '/Users/sep/Documents/web/vue-node-sandbox-console/server/src/index.ts'
+  ]
+}
+[2024-02-19T17:09:59.011] [DEBUG] default - POST /api/sandbox/execute-code - 1ms
+[2024-02-19T17:09:59.011] [DEBUG] default - {
+  codeData: '// Type your JavaScript code here \n' +
+    '// Dangerous edit, test your code locally!!! \n' +
+    'const a = 10;\n' +
+    'const b = 20;\n' +
+    "const cal = require('uitlcal');\n" +
+    '\n' +
+    'const val = cal.sum(a, b);\n' +
+    '\n' +
+    "console.log('a + b =', val);"
+}
+[2024-02-19T17:09:59.015] [DEBUG] default -   [90m-->[39m [1mPOST[22m [90m/api/sandbox/execute-code[39m [32m200[39m [90m30ms[39m [90m287b[39m
+[2024-02-19T17:10:19.935] [DEBUG] default - Listening on port: 8088
+[2024-02-19T17:10:39.768] [DEBUG] default -   [90m<--[39m [1mPOST[22m [90m/api/admin/sandbox/execute-code[39m
+[2024-02-19T17:10:39.784] [DEBUG] default - POST /api/admin/sandbox/execute-code - 0ms
+[2024-02-19T17:10:39.784] [DEBUG] default - {
+  codeData: '// Type your JavaScript code here \n' +
+    '// Dangerous edit, test your code locally!!! \n' +
+    'const a = 10;\n' +
+    'const b = 20;\n' +
+    "// const cal = require('uitlcal');\n" +
+    '\n' +
+    'const val = a + b;\n' +
+    '\n' +
+    "console.log('a + b =', val);"
+}
+[2024-02-19T17:10:39.789] [DEBUG] default -   [90m-->[39m [1mPOST[22m [90m/api/admin/sandbox/execute-code[39m [33m404[39m [90m22ms[39m [90m34b[39m
+[2024-02-19T17:11:13.860] [DEBUG] default -   [90m<--[39m [1mGET[22m [90m/api/admin/getUserInfo[39m
+[2024-02-19T17:11:13.869] [DEBUG] default - GET /api/admin/getUserInfo - 0ms
+[2024-02-19T17:11:13.869] [DEBUG] default - {}
+[2024-02-19T17:11:13.871] [DEBUG] default -   [90m-->[39m [1mGET[22m [90m/api/admin/getUserInfo[39m [33m404[39m [90m10ms[39m [90m34b[39m
+[2024-02-19T17:11:15.905] [DEBUG] default -   [90m<--[39m [1mPOST[22m [90m/api/sandbox/execute-code[39m
+[2024-02-19T17:11:15.915] [DEBUG] default - sandbox exec start...
+ // Type your JavaScript code here 
+// Dangerous edit, test your code locally!!! 
+const a = 10;
+const b = 20;
+// const cal = require('uitlcal');
+
+const val = a + b;
+
+console.log('a + b =', val);
+[2024-02-19T17:11:15.916] [DEBUG] default - Sandbox console globalConsole.log('VM exec in process:', process.pid, process.title)
+try {
+    console.result = ''
+    await connectDBAsync()
+    const a = 10;
+    const b = 20;
+    const val = a + b;
+    console.log('a + b =', val);
+    await disconnectDBAsync()
+    inject(console.result)
+} catch (e) {
+    inject(e)
+}
+[2024-02-19T17:11:15.938] [DEBUG] default - VM exec in process: 65655 /Users/sep/.nvm/versions/node/v14.7.0/bin/node
+[2024-02-19T17:11:15.938] [DEBUG] default - connectDBAsync 1
+[2024-02-19T17:11:15.939] [DEBUG] default - Sandbox console a + b = 30
+[2024-02-19T17:11:15.939] [DEBUG] default - disconnectDBAsync 1
+[2024-02-19T17:11:15.939] [DEBUG] default - sandbox exec end...
+ 2024/2/19 下午5:11:15 debug:
+a + b = 30
+
+
+[2024-02-19T17:11:15.940] [DEBUG] default - POST /api/sandbox/execute-code - 0ms
+[2024-02-19T17:11:15.940] [DEBUG] default - {
+  codeData: '// Type your JavaScript code here \n' +
+    '// Dangerous edit, test your code locally!!! \n' +
+    'const a = 10;\n' +
+    'const b = 20;\n' +
+    "// const cal = require('uitlcal');\n" +
+    '\n' +
+    'const val = a + b;\n' +
+    '\n' +
+    "console.log('a + b =', val);"
+}
+[2024-02-19T17:11:15.941] [DEBUG] default -   [90m-->[39m [1mPOST[22m [90m/api/sandbox/execute-code[39m [32m200[39m [90m36ms[39m [90m59b[39m
+[2024-02-19T17:11:18.204] [DEBUG] default -   [90m<--[39m [1mPOST[22m [90m/api/sandbox/execute-code[39m
+[2024-02-19T17:11:18.213] [DEBUG] default - sandbox exec start...
+ // Type your JavaScript code here 
+// Dangerous edit, test your code locally!!! 
+const a = 10;
+const b = 20;
+// const cal = require('uitlcal');
+
+const val = a + b;
+
+console.log('a + b =', val);
+[2024-02-19T17:11:18.214] [DEBUG] default - Sandbox console globalConsole.log('VM exec in process:', process.pid, process.title)
+try {
+    console.result = ''
+    await connectDBAsync()
+    const a = 10;
+    const b = 20;
+    const val = a + b;
+    console.log('a + b =', val);
+    await disconnectDBAsync()
+    inject(console.result)
+} catch (e) {
+    inject(e)
+}
+[2024-02-19T17:11:18.219] [DEBUG] default - VM exec in process: 65655 /Users/sep/.nvm/versions/node/v14.7.0/bin/node
+[2024-02-19T17:11:18.219] [DEBUG] default - connectDBAsync 1
+[2024-02-19T17:11:18.220] [DEBUG] default - Sandbox console a + b = 30
+[2024-02-19T17:11:18.220] [DEBUG] default - disconnectDBAsync 1
+[2024-02-19T17:11:18.220] [DEBUG] default - sandbox exec end...
+ 2024/2/19 下午5:11:18 debug:
+a + b = 30
+
+
+[2024-02-19T17:11:18.220] [DEBUG] default - POST /api/sandbox/execute-code - 0ms
+[2024-02-19T17:11:18.221] [DEBUG] default - {
+  codeData: '// Type your JavaScript code here \n' +
+    '// Dangerous edit, test your code locally!!! \n' +
+    'const a = 10;\n' +
+    'const b = 20;\n' +
+    "// const cal = require('uitlcal');\n" +
+    '\n' +
+    'const val = a + b;\n' +
+    '\n' +
+    "console.log('a + b =', val);"
+}
+[2024-02-19T17:11:18.222] [DEBUG] default -   [90m-->[39m [1mPOST[22m [90m/api/sandbox/execute-code[39m [32m200[39m [90m18ms[39m [90m59b[39m
+[2024-02-19T17:14:01.284] [DEBUG] default -   [90m<--[39m [1mPOST[22m [90m/api/sandbox/execute-code[39m
+[2024-02-19T17:14:01.287] [DEBUG] default - sandbox exec start...
+ const a = 10;
+const b = 20;
+
+const val = a + b;
+console.log('a + b =', val);
+
+const email = getUserByEmail('admin@septenary.cn');
+console.log('email =', email);
+
+[2024-02-19T17:14:01.287] [DEBUG] default - Sandbox console globalConsole.log('VM exec in process:', process.pid, process.title)
+try {
+    console.result = ''
+    await connectDBAsync()
+    const a = 10;
+    const b = 20;
+    const val = a + b;
+    console.log('a + b =', val);
+    const email = getUserByEmail('admin@septenary.cn');
+    console.log('email =', email);
+    await disconnectDBAsync()
+    inject(console.result)
+} catch (e) {
+    inject(e)
+}
+[2024-02-19T17:14:01.288] [DEBUG] default - VM exec in process: 65655 /Users/sep/.nvm/versions/node/v14.7.0/bin/node
+[2024-02-19T17:14:01.289] [DEBUG] default - connectDBAsync 1
+[2024-02-19T17:14:01.289] [DEBUG] default - Sandbox console a + b = 30
+[2024-02-19T17:14:01.289] [DEBUG] default - Sandbox console email = { email: 'admin@septenary.cn' }
+[2024-02-19T17:14:01.289] [DEBUG] default - disconnectDBAsync 1
+[2024-02-19T17:14:01.289] [DEBUG] default - sandbox exec end...
+ 2024/2/19 下午5:14:01 debug:
+a + b = 30
+
+2024/2/19 下午5:14:01 debug:
+email = {"email":"admin@septenary.cn"}
+
+
+[2024-02-19T17:14:01.290] [DEBUG] default - POST /api/sandbox/execute-code - 0ms
+[2024-02-19T17:14:01.290] [DEBUG] default - {
+  codeData: 'const a = 10;\n' +
+    'const b = 20;\n' +
+    '\n' +
+    'const val = a + b;\n' +
+    "console.log('a + b =', val);\n" +
+    '\n' +
+    "const email = getUserByEmail('admin@septenary.cn');\n" +
+    "console.log('email =', email);\n"
+}
+[2024-02-19T17:14:01.290] [DEBUG] default -   [90m-->[39m [1mPOST[22m [90m/api/sandbox/execute-code[39m [32m200[39m [90m6ms[39m [90m137b[39m
+[2024-02-19T17:14:05.449] [DEBUG] default -   [90m<--[39m [1mPOST[22m [90m/api/sandbox/execute-code[39m
+[2024-02-19T17:14:05.450] [DEBUG] default - sandbox exec start...
+ const a = 10;
+const b = 20;
+
+const val = a + b;
+console.log('a + b =', val);
+
+const email = getUserByEmail('admin@septenary.cn');
+console.log('email =', email);
+
+[2024-02-19T17:14:05.451] [DEBUG] default - Sandbox console globalConsole.log('VM exec in process:', process.pid, process.title)
+try {
+    console.result = ''
+    await connectDBAsync()
+    const a = 10;
+    const b = 20;
+    const val = a + b;
+    console.log('a + b =', val);
+    const email = getUserByEmail('admin@septenary.cn');
+    console.log('email =', email);
+    await disconnectDBAsync()
+    inject(console.result)
+} catch (e) {
+    inject(e)
+}
+[2024-02-19T17:14:05.456] [DEBUG] default - VM exec in process: 65655 /Users/sep/.nvm/versions/node/v14.7.0/bin/node
+[2024-02-19T17:14:05.457] [DEBUG] default - connectDBAsync 1
+[2024-02-19T17:14:05.458] [DEBUG] default - Sandbox console a + b = 30
+[2024-02-19T17:14:05.458] [DEBUG] default - Sandbox console email = { email: 'admin@septenary.cn' }
+[2024-02-19T17:14:05.459] [DEBUG] default - disconnectDBAsync 1
+[2024-02-19T17:14:05.459] [DEBUG] default - sandbox exec end...
+ 2024/2/19 下午5:14:05 debug:
+a + b = 30
+
+2024/2/19 下午5:14:05 debug:
+email = {"email":"admin@septenary.cn"}
+
+
+[2024-02-19T17:14:05.459] [DEBUG] default - POST /api/sandbox/execute-code - 0ms
+[2024-02-19T17:14:05.459] [DEBUG] default - {
+  codeData: 'const a = 10;\n' +
+    'const b = 20;\n' +
+    '\n' +
+    'const val = a + b;\n' +
+    "console.log('a + b =', val);\n" +
+    '\n' +
+    "const email = getUserByEmail('admin@septenary.cn');\n" +
+    "console.log('email =', email);\n"
+}
+[2024-02-19T17:14:05.461] [DEBUG] default -   [90m-->[39m [1mPOST[22m [90m/api/sandbox/execute-code[39m [32m200[39m [90m12ms[39m [90m137b[39m
+[2024-02-19T17:14:07.473] [DEBUG] default -   [90m<--[39m [1mPOST[22m [90m/api/sandbox/execute-code[39m
+[2024-02-19T17:14:07.474] [DEBUG] default - sandbox exec start...
+ const a = 10;
+const b = 20;
+
+const val = a + b;
+console.log('a + b =', val);
+
+const email = getUserByEmail('admin@septenary.cn');
+console.log('email =', email);
+
+[2024-02-19T17:14:07.475] [DEBUG] default - Sandbox console globalConsole.log('VM exec in process:', process.pid, process.title)
+try {
+    console.result = ''
+    await connectDBAsync()
+    const a = 10;
+    const b = 20;
+    const val = a + b;
+    console.log('a + b =', val);
+    const email = getUserByEmail('admin@septenary.cn');
+    console.log('email =', email);
+    await disconnectDBAsync()
+    inject(console.result)
+} catch (e) {
+    inject(e)
+}
+[2024-02-19T17:14:07.481] [DEBUG] default - VM exec in process: 65655 /Users/sep/.nvm/versions/node/v14.7.0/bin/node
+[2024-02-19T17:14:07.482] [DEBUG] default - connectDBAsync 1
+[2024-02-19T17:14:07.482] [DEBUG] default - Sandbox console a + b = 30
+[2024-02-19T17:14:07.482] [DEBUG] default - Sandbox console email = { email: 'admin@septenary.cn' }
+[2024-02-19T17:14:07.482] [DEBUG] default - disconnectDBAsync 1
+[2024-02-19T17:14:07.482] [DEBUG] default - sandbox exec end...
+ 2024/2/19 下午5:14:07 debug:
+a + b = 30
+
+2024/2/19 下午5:14:07 debug:
+email = {"email":"admin@septenary.cn"}
+
+
+[2024-02-19T17:14:07.483] [DEBUG] default - POST /api/sandbox/execute-code - 0ms
+[2024-02-19T17:14:07.483] [DEBUG] default - {
+  codeData: 'const a = 10;\n' +
+    'const b = 20;\n' +
+    '\n' +
+    'const val = a + b;\n' +
+    "console.log('a + b =', val);\n" +
+    '\n' +
+    "const email = getUserByEmail('admin@septenary.cn');\n" +
+    "console.log('email =', email);\n"
+}
+[2024-02-19T17:14:07.483] [DEBUG] default -   [90m-->[39m [1mPOST[22m [90m/api/sandbox/execute-code[39m [32m200[39m [90m10ms[39m [90m137b[39m
+[2024-02-19T17:14:09.489] [DEBUG] default -   [90m<--[39m [1mPOST[22m [90m/api/sandbox/execute-code[39m
+[2024-02-19T17:14:09.490] [DEBUG] default - sandbox exec start...
+ const a = 10;
+const b = 20;
+
+const val = a + b;
+console.log('a + b =', val);
+
+const email = getUserByEmail('admin@septenary.cn');
+console.log('email =', email);
+
+[2024-02-19T17:14:09.490] [DEBUG] default - Sandbox console globalConsole.log('VM exec in process:', process.pid, process.title)
+try {
+    console.result = ''
+    await connectDBAsync()
+    const a = 10;
+    const b = 20;
+    const val = a + b;
+    console.log('a + b =', val);
+    const email = getUserByEmail('admin@septenary.cn');
+    console.log('email =', email);
+    await disconnectDBAsync()
+    inject(console.result)
+} catch (e) {
+    inject(e)
+}
+[2024-02-19T17:14:09.494] [DEBUG] default - VM exec in process: 65655 /Users/sep/.nvm/versions/node/v14.7.0/bin/node
+[2024-02-19T17:14:09.495] [DEBUG] default - connectDBAsync 1
+[2024-02-19T17:14:09.497] [DEBUG] default - Sandbox console a + b = 30
+[2024-02-19T17:14:09.497] [DEBUG] default - Sandbox console email = { email: 'admin@septenary.cn' }
+[2024-02-19T17:14:09.498] [DEBUG] default - disconnectDBAsync 1
+[2024-02-19T17:14:09.498] [DEBUG] default - sandbox exec end...
+ 2024/2/19 下午5:14:09 debug:
+a + b = 30
+
+2024/2/19 下午5:14:09 debug:
+email = {"email":"admin@septenary.cn"}
+
+
+[2024-02-19T17:14:09.498] [DEBUG] default - POST /api/sandbox/execute-code - 0ms
+[2024-02-19T17:14:09.498] [DEBUG] default - {
+  codeData: 'const a = 10;\n' +
+    'const b = 20;\n' +
+    '\n' +
+    'const val = a + b;\n' +
+    "console.log('a + b =', val);\n" +
+    '\n' +
+    "const email = getUserByEmail('admin@septenary.cn');\n" +
+    "console.log('email =', email);\n"
+}
+[2024-02-19T17:14:09.501] [DEBUG] default -   [90m-->[39m [1mPOST[22m [90m/api/sandbox/execute-code[39m [32m200[39m [90m12ms[39m [90m137b[39m
+[2024-02-19T17:16:47.765] [DEBUG] default - Listening on port: 8088
+[2024-02-19T17:18:03.399] [DEBUG] default -   [90m<--[39m [1mGET[22m [90m/api/admin/getUserInfo[39m
+[2024-02-19T17:18:03.414] [DEBUG] default - GET /api/admin/getUserInfo - 0ms
+[2024-02-19T17:18:03.414] [DEBUG] default - {}
+[2024-02-19T17:18:03.420] [DEBUG] default -   [90m-->[39m [1mGET[22m [90m/api/admin/getUserInfo[39m [33m404[39m [90m20ms[39m [90m34b[39m
+[2024-02-19T17:18:03.699] [DEBUG] default -   [90m<--[39m [1mGET[22m [90m/api/admin/milestones/activate[39m
+[2024-02-19T17:18:03.705] [DEBUG] default -   [90m<--[39m [1mGET[22m [90m/api/admin/quality/statistics[39m
+[2024-02-19T17:18:03.707] [DEBUG] default -   [90m<--[39m [1mGET[22m [90m/api/admin/gitoperate/statistics[39m
+[2024-02-19T17:18:03.707] [DEBUG] default -   [90m<--[39m [1mGET[22m [90m/api/admin/resourceoccupy/project-sprint-info[39m
+[2024-02-19T17:18:03.710] [DEBUG] default - GET /api/admin/milestones/activate - 0ms
+[2024-02-19T17:18:03.711] [DEBUG] default - {}
+[2024-02-19T17:18:03.712] [DEBUG] default -   [90m-->[39m [1mGET[22m [90m/api/admin/milestones/activate[39m [33m404[39m [90m14ms[39m [90m34b[39m
+[2024-02-19T17:18:03.713] [DEBUG] default - GET /api/admin/quality/statistics - 0ms
+[2024-02-19T17:18:03.713] [DEBUG] default - {}
+[2024-02-19T17:18:03.713] [DEBUG] default -   [90m-->[39m [1mGET[22m [90m/api/admin/quality/statistics[39m [33m404[39m [90m8ms[39m [90m34b[39m
+[2024-02-19T17:18:03.714] [DEBUG] default - GET /api/admin/gitoperate/statistics - 0ms
+[2024-02-19T17:18:03.714] [DEBUG] default - {}
+[2024-02-19T17:18:03.714] [DEBUG] default -   [90m-->[39m [1mGET[22m [90m/api/admin/gitoperate/statistics[39m [33m404[39m [90m7ms[39m [90m34b[39m
+[2024-02-19T17:18:03.715] [DEBUG] default - GET /api/admin/resourceoccupy/project-sprint-info - 0ms
+[2024-02-19T17:18:03.715] [DEBUG] default - {}
+[2024-02-19T17:18:03.715] [DEBUG] default -   [90m-->[39m [1mGET[22m [90m/api/admin/resourceoccupy/project-sprint-info[39m [33m404[39m [90m8ms[39m [90m34b[39m
+[2024-02-19T17:18:04.542] [DEBUG] default -   [90m<--[39m [1mPOST[22m [90m/api/admin/tools/getStatisticalCrashState[39m
+[2024-02-19T17:18:04.549] [DEBUG] default - POST /api/admin/tools/getStatisticalCrashState - 0ms
+[2024-02-19T17:18:04.552] [DEBUG] default - {}
+[2024-02-19T17:18:04.558] [DEBUG] default -   [90m-->[39m [1mPOST[22m [90m/api/admin/tools/getStatisticalCrashState[39m [33m404[39m [90m16ms[39m [90m34b[39m
+[2024-02-19T17:18:04.560] [DEBUG] default -   [90m<--[39m [1mGET[22m [90m/api/admin/member/getUserInfoByEmail?email=undefined[39m
+[2024-02-19T17:18:04.562] [DEBUG] default - GET /api/admin/member/getUserInfoByEmail?email=undefined - 0ms
+[2024-02-19T17:18:04.562] [DEBUG] default - {}
+[2024-02-19T17:18:04.563] [DEBUG] default -   [90m-->[39m [1mGET[22m [90m/api/admin/member/getUserInfoByEmail?email=undefined[39m [33m404[39m [90m3ms[39m [90m34b[39m
+[2024-02-19T17:18:15.884] [DEBUG] default -   [90m<--[39m [1mPOST[22m [90m/api/sandbox/execute-code[39m
+[2024-02-19T17:18:15.908] [DEBUG] default - sandbox exec start...
+ // Type your JavaScript code here 
+// Dangerous edit, test your code locally!!! 
+const a = 10;
+const b = 20;
+const cal = require('uitlcal');
+
+const val = cal.sum(a, b);
+
+console.log('a + b =', val);
+[2024-02-19T17:18:15.909] [DEBUG] default - Sandbox console globalConsole.log('VM exec in process:', process.pid, process.title)
+try {
+    console.result = ''
+    await connectDBAsync()
+    const a = 10;
+    const b = 20;
+    const cal = require('uitlcal');
+    const val = cal.sum(a, b);
+    console.log('a + b =', val);
+    await disconnectDBAsync()
+    inject(console.result)
+} catch (e) {
+    inject(e)
+}
+[2024-02-19T17:18:15.964] [DEBUG] default - VM exec in process: 66477 /Users/sep/.nvm/versions/node/v14.7.0/bin/node
+[2024-02-19T17:18:15.965] [DEBUG] default - connectDBAsync 1
+[2024-02-19T17:18:15.966] [DEBUG] default - sandbox exec end...
+ Error: Cannot find module 'uitlcal'
+Require stack:
+- /Users/sep/Documents/web/vue-node-sandbox-console/server/src/routes/sandbox.ts
+- /Users/sep/Documents/web/vue-node-sandbox-console/server/src/routes/index.ts
+- /Users/sep/Documents/web/vue-node-sandbox-console/server/src/index.ts
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:1085:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:928:27)
+    at Module.require (internal/modules/cjs/loader.js:1145:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at evalmachine.<anonymous>:7:17
+    at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/sep/Documents/web/vue-node-sandbox-console/server/src/routes/sandbox.ts',
+    '/Users/sep/Documents/web/vue-node-sandbox-console/server/src/routes/index.ts',
+    '/Users/sep/Documents/web/vue-node-sandbox-console/server/src/index.ts'
+  ]
+}
+[2024-02-19T17:18:15.971] [DEBUG] default - POST /api/sandbox/execute-code - 0ms
+[2024-02-19T17:18:15.971] [DEBUG] default - {
+  codeData: '// Type your JavaScript code here \n' +
+    '// Dangerous edit, test your code locally!!! \n' +
+    'const a = 10;\n' +
+    'const b = 20;\n' +
+    "const cal = require('uitlcal');\n" +
+    '\n' +
+    'const val = cal.sum(a, b);\n' +
+    '\n' +
+    "console.log('a + b =', val);"
+}
+[2024-02-19T17:18:15.972] [DEBUG] default -   [90m-->[39m [1mPOST[22m [90m/api/sandbox/execute-code[39m [32m200[39m [90m88ms[39m [90m287b[39m
+[2024-02-19T17:19:34.552] [DEBUG] default -   [90m<--[39m [1mPOST[22m [90m/api/sandbox/execute-code[39m
+[2024-02-19T17:19:34.558] [DEBUG] default - sandbox exec start...
+ // Type your JavaScript code here 
+// Dangerous edit, test your code locally!!! 
+const a = 10;
+const b = 20;
+const sum = a + b;
+console.log('a + b =', sum);
+
+const usr = getUserByEmail('admin@septenary.cn');
+console.log('usr = ', usr);
+
+[2024-02-19T17:19:34.559] [DEBUG] default - Sandbox console globalConsole.log('VM exec in process:', process.pid, process.title)
+try {
+    console.result = ''
+    await connectDBAsync()
+    const a = 10;
+    const b = 20;
+    const sum = a + b;
+    console.log('a + b =', sum);
+    const usr = getUserByEmail('admin@septenary.cn');
+    console.log('usr = ', usr);
+    await disconnectDBAsync()
+    inject(console.result)
+} catch (e) {
+    inject(e)
+}
+[2024-02-19T17:19:34.562] [DEBUG] default - VM exec in process: 66477 /Users/sep/.nvm/versions/node/v14.7.0/bin/node
+[2024-02-19T17:19:34.562] [DEBUG] default - connectDBAsync 1
+[2024-02-19T17:19:34.562] [DEBUG] default - Sandbox console a + b = 30
+[2024-02-19T17:19:34.563] [DEBUG] default - Sandbox console usr =  { email: 'admin@septenary.cn', name: 'Sep', age: '20' }
+[2024-02-19T17:19:34.563] [DEBUG] default - disconnectDBAsync 1
+[2024-02-19T17:19:34.563] [DEBUG] default - sandbox exec end...
+ 2024/2/19 下午5:19:34 debug:
+a + b = 30
+
+2024/2/19 下午5:19:34 debug:
+usr =  {"email":"admin@septenary.cn","name":"Sep","age":"20"}
+
+
+[2024-02-19T17:19:34.564] [DEBUG] default - POST /api/sandbox/execute-code - 0ms
+[2024-02-19T17:19:34.564] [DEBUG] default - {
+  codeData: '// Type your JavaScript code here \n' +
+    '// Dangerous edit, test your code locally!!! \n' +
+    'const a = 10;\n' +
+    'const b = 20;\n' +
+    'const sum = a + b;\n' +
+    "console.log('a + b =', sum);\n" +
+    '\n' +
+    "const usr = getUserByEmail('admin@septenary.cn');\n" +
+    "console.log('usr = ', usr);\n"
+}
+[2024-02-19T17:19:34.569] [DEBUG] default -   [90m-->[39m [1mPOST[22m [90m/api/sandbox/execute-code[39m [32m200[39m [90m17ms[39m [90m168b[39m
+[2024-02-19T17:29:27.972] [DEBUG] default - Listening on port: 8088
+[2024-02-19T17:30:07.062] [DEBUG] default -   [90m<--[39m [1mGET[22m [90m/api/admin/getUserInfo[39m
+[2024-02-19T17:30:07.070] [DEBUG] default - GET /api/admin/getUserInfo - 0ms
+[2024-02-19T17:30:07.070] [DEBUG] default - {}
+[2024-02-19T17:30:07.075] [DEBUG] default -   [90m-->[39m [1mGET[22m [90m/api/admin/getUserInfo[39m [33m404[39m [90m13ms[39m [90m34b[39m
+[2024-02-19T17:30:07.602] [DEBUG] default -   [90m<--[39m [1mGET[22m [90m/api/admin/milestones/activate[39m
+[2024-02-19T17:30:07.605] [DEBUG] default -   [90m<--[39m [1mGET[22m [90m/api/admin/quality/statistics[39m
+[2024-02-19T17:30:07.606] [DEBUG] default -   [90m<--[39m [1mGET[22m [90m/api/admin/gitoperate/statistics[39m
+[2024-02-19T17:30:07.607] [DEBUG] default -   [90m<--[39m [1mGET[22m [90m/api/admin/resourceoccupy/project-sprint-info[39m
+[2024-02-19T17:30:07.610] [DEBUG] default - GET /api/admin/milestones/activate - 0ms
+[2024-02-19T17:30:07.610] [DEBUG] default - {}
+[2024-02-19T17:30:07.611] [DEBUG] default -   [90m-->[39m [1mGET[22m [90m/api/admin/milestones/activate[39m [33m404[39m [90m9ms[39m [90m34b[39m
+[2024-02-19T17:30:07.613] [DEBUG] default - GET /api/admin/quality/statistics - 0ms
+[2024-02-19T17:30:07.613] [DEBUG] default - {}
+[2024-02-19T17:30:07.613] [DEBUG] default -   [90m-->[39m [1mGET[22m [90m/api/admin/quality/statistics[39m [33m404[39m [90m8ms[39m [90m34b[39m
+[2024-02-19T17:30:07.614] [DEBUG] default - GET /api/admin/gitoperate/statistics - 0ms
+[2024-02-19T17:30:07.614] [DEBUG] default - {}
+[2024-02-19T17:30:07.615] [DEBUG] default -   [90m-->[39m [1mGET[22m [90m/api/admin/gitoperate/statistics[39m [33m404[39m [90m9ms[39m [90m34b[39m
+[2024-02-19T17:30:07.615] [DEBUG] default - GET /api/admin/resourceoccupy/project-sprint-info - 0ms
+[2024-02-19T17:30:07.615] [DEBUG] default - {}
+[2024-02-19T17:30:07.615] [DEBUG] default -   [90m-->[39m [1mGET[22m [90m/api/admin/resourceoccupy/project-sprint-info[39m [33m404[39m [90m8ms[39m [90m34b[39m
+[2024-02-19T17:30:07.650] [DEBUG] default -   [90m<--[39m [1mPOST[22m [90m/api/admin/tools/getStatisticalCrashState[39m
+[2024-02-19T17:30:07.651] [DEBUG] default - POST /api/admin/tools/getStatisticalCrashState - 0ms
+[2024-02-19T17:30:07.651] [DEBUG] default - {}
+[2024-02-19T17:30:07.651] [DEBUG] default -   [90m-->[39m [1mPOST[22m [90m/api/admin/tools/getStatisticalCrashState[39m [33m404[39m [90m1ms[39m [90m34b[39m
+[2024-02-19T17:30:07.652] [DEBUG] default -   [90m<--[39m [1mGET[22m [90m/api/admin/member/getUserInfoByEmail?email=undefined[39m
+[2024-02-19T17:30:07.654] [DEBUG] default - GET /api/admin/member/getUserInfoByEmail?email=undefined - 0ms
+[2024-02-19T17:30:07.654] [DEBUG] default - {}
+[2024-02-19T17:30:07.655] [DEBUG] default -   [90m-->[39m [1mGET[22m [90m/api/admin/member/getUserInfoByEmail?email=undefined[39m [33m404[39m [90m3ms[39m [90m34b[39m
+[2024-02-19T17:31:59.387] [DEBUG] default -   [90m<--[39m [1mPOST[22m [90m/api/sandbox/execute-code[39m
+[2024-02-19T17:31:59.409] [DEBUG] default - sandbox exec start...
+ // Type your JavaScript code here 
+// Dangerous edit, test your code locally!!! 
+const a = 10;
+const b = 20;
+const sum = a + b;
+console.log('a + b =', sum);
+
+const usr = getUserByEmail('admin@septenary.cn');
+console.log('usr = ', usr);
+
+[2024-02-19T17:31:59.410] [DEBUG] default - Sandbox console globalConsole.log('VM exec in process:', process.pid, process.title)
+try {
+    console.result = ''
+    await connectDBAsync()
+    const a = 10;
+    const b = 20;
+    const sum = a + b;
+    console.log('a + b =', sum);
+    const usr = getUserByEmail('admin@septenary.cn');
+    console.log('usr = ', usr);
+    await disconnectDBAsync()
+    inject(console.result)
+} catch (e) {
+    inject(e)
+}
+[2024-02-19T17:31:59.436] [DEBUG] default - VM exec in process: 67011 /Users/sep/.nvm/versions/node/v14.7.0/bin/node
+[2024-02-19T17:31:59.437] [DEBUG] default - connectDBAsync 1
+[2024-02-19T17:31:59.437] [DEBUG] default - Sandbox console a + b = 30
+[2024-02-19T17:31:59.438] [DEBUG] default - Sandbox console usr =  { email: 'admin@septenary.cn', name: 'Sep', age: '20' }
+[2024-02-19T17:31:59.439] [DEBUG] default - disconnectDBAsync 1
+[2024-02-19T17:31:59.439] [DEBUG] default - sandbox exec end...
+ 2024/2/19 下午5:31:59 debug:
+a + b = 30
+
+2024/2/19 下午5:31:59 debug:
+usr =  {"email":"admin@septenary.cn","name":"Sep","age":"20"}
+
+
+[2024-02-19T17:31:59.439] [DEBUG] default - POST /api/sandbox/execute-code - 0ms
+[2024-02-19T17:31:59.439] [DEBUG] default - {
+  codeData: '// Type your JavaScript code here \n' +
+    '// Dangerous edit, test your code locally!!! \n' +
+    'const a = 10;\n' +
+    'const b = 20;\n' +
+    'const sum = a + b;\n' +
+    "console.log('a + b =', sum);\n" +
+    '\n' +
+    "const usr = getUserByEmail('admin@septenary.cn');\n" +
+    "console.log('usr = ', usr);\n"
+}
+[2024-02-19T17:31:59.441] [DEBUG] default -   [90m-->[39m [1mPOST[22m [90m/api/sandbox/execute-code[39m [32m200[39m [90m55ms[39m [90m168b[39m
